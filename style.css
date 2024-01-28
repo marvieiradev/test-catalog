@@ -120,3 +120,20 @@ header p {
 .item img {
     width: 183px;
 }
+
+.destaque {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: rgb(0, 88, 88);
+}
+
+.ver {
+    background-color: rgb(0, 88, 88);
+    border: none;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(212, 255, 241);
+    cursor: pointer;
+}
