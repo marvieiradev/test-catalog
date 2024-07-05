@@ -1,3 +1,6 @@
+const imageModal = document.querySelector(".image_modal");
+const imageForm = document.querySelector(".image_form");
+
 function busca() {
     var inputBusca = document.getElementById("input-busca").value.toLowerCase();
     if (inputBusca === "abada" || inputBusca === "carnaval" || inputBusca === "folia") {
@@ -13,6 +16,9 @@ function addItens(page) {
     for (var i = 0; i < itens.length; i++) {
         if (itens[i].tag === page) {
 
+            var mat = [];
+            mat.push("" + itens[i].image)
+
             const div = document.createElement("div");
             const image = document.createElement("img");
             const p = document.createElement("p");
@@ -24,11 +30,25 @@ function addItens(page) {
             btn.innerText = "VER PRODUTO"
             btn.classList.add("ver");
             btn.addEventListener("click", () => {
-                //document.querySelector(".image_modal").style.display = "flex";
-                //document.querySelector(".image_form").innerHTML = `<img src="${itens}" alt="">`;
+                imageModal.style.display = "flex";
+                imageModal.addEventListener("click", () => {
+                    hideModal();
+                })
+                imageForm.innerHTML = `
+                <p>${p.innerText}</p>
+                <img src="${image.src}" alt="">
+                <div class="buttons">
+                    <button onclick="hideModal()">VOLTAR</button>
+                    <button onclick="hideModal()">QUERO ESSE</button>
+                </div>
+                `;
             })
             div.append(image, p, btn);
             document.getElementById("conteudo").appendChild(div)
         }
     }
+}
+
+function hideModal() {
+    imageModal.style.display = "none";
 }

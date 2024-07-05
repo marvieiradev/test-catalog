@@ -155,18 +155,43 @@ header p {
     position: fixed;
     bottom: 0;
     left: 0;
+    flex-direction: column;
 }
 
 .image_form {
     width: 100%;
-    max-width: 350px;
-    max-height: 500px;
-    background-color: #00021d;
-    border: 1px solid #BAD8FE;
+    max-width: 450px;
+    max-height: 600px;
+    background-color: rgb(212, 255, 241);
+    border: 1px solid rgb(0, 88, 88);
     background-blend-mode: soft-light;
     border-radius: 5px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image_form button {
+    background-color: rgb(0, 88, 88);
+    border: none;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    color: rgb(212, 255, 241);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.image_form p {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 88, 88) !important;
 }
