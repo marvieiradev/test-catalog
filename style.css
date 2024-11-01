@@ -176,6 +176,7 @@ header p {
   justify-content: space-around;
 }
 
+<<<<<<< HEAD
 .image_form button {
   background-color: rgb(0, 88, 88);
   border: none;
@@ -192,4 +193,22 @@ header p {
   font-weight: bold;
   text-align: center;
   color: rgb(0, 88, 88) !important;
+=======
+.image_form button, .image_form a {
+    background-color: rgb(0, 88, 88);
+    border: none;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    color: rgb(212, 255, 241);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.image_form p {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 88, 88) !important;
+>>>>>>> 140861b57fbf0dbcffebaf93bbdac0dc24b9b5a4
 }
