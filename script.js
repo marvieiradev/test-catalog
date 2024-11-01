@@ -39,7 +39,7 @@ function addItens(page) {
                 <img src="${image.src}" alt="">
                 <div class="buttons">
                     <button onclick="hideModal()">VOLTAR</button>
-                    <button onclick="hideModal()">QUERO ESSE</button>
+                    <a href="https://wa.me/5585986099213?text=${image.src}" target="_blank" onclick="hideModal()">QUERO ESSE</a>
                 </div>
                 `;
             })
